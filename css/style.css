@@ -1,0 +1,63 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.type {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+.navI:hover {
+    color: #5365aa;
+}
+
+.nav-text {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.intro-text {
+    font-size: 3em;
+    font-weight: 500;
+    color: #5365aa;
+}
+.mainbg {
+    background-image: url("../img/bg4.jpg");
+    background-size: cover;    
+}
+.transparent {
+    background: rgba(0, 0, 0, 0)
+}
+.head-text {
+    font-size: 3em;
+    color: #5365aa;
+}
+.body-text {
+    margin-top: 1.5%;
+    font-size: 1.5em;
+}
+.dev-ico {
+    margin-top: 3%;
+}
+i {
+    font-size: 5rem;
+    margin: 3%;
+    margin-bottom: 25px;
+}
+i:hover {
+    color: #5365aa;
+}
+.about {
+    background-color: #FFFAFA;
+}
+@media(max-width: 767px) { /* <== You can change this break point as per your  needs */
+    .dev-ico {
+        margin-top: 18%;
+    }
+}
