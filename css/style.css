@@ -28,7 +28,7 @@
     color: #5365aa;
 }
 .mainbg {
-    background-image: url("../img/bg4.jpg");
+    background-image: url("../img/bg5.jpg");
     background-size: cover;    
 }
 .transparent {
@@ -38,9 +38,15 @@
     font-size: 3em;
     color: #5365aa;
 }
+.project-title {
+    font-size: 2em;
+}
 .body-text {
     margin-top: 1.5%;
     font-size: 1.5em;
+}
+.projMargin {
+    margin-top: 45px;
 }
 .dev-ico {
     margin-top: 3%;
@@ -48,7 +54,7 @@
 i {
     font-size: 5rem;
     margin: 3%;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 i:hover {
     color: #5365aa;
@@ -56,8 +62,68 @@ i:hover {
 .about {
     background-color: #FFFAFA;
 }
+.v-align {
+    margin: auto 0;
+}
+.box-withBorder {
+    padding-right: 50px;
+    border-right: 1px solid #eaeaea;
+}
+.box-noBorder {
+    padding-left: 50px;
+}
+.projects {
+    background-color: #FFFAFA;
+}
+.projImg {
+    -webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-o-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+	filter: brightness(100%);
+}
+.darken {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+}
+.projImg:hover {
+    -webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+}
+.button.is-primary {
+    background-color: #5365aa;
+}
+a {
+    color: #5365aa;
+}
+.field .control input {
+    border-color: #dbdbdb;
+}
+.field .control textarea {
+    border-color: #dbdbdb;
+}
 @media(max-width: 767px) { /* <== You can change this break point as per your  needs */
     .dev-ico {
         margin-top: 18%;
     }
+    .projMargin {
+        margin-top: 20px;
+    }
+    .box-withBorder {
+        padding: 0;
+        border: none;
+    }
+    .box-noBorder {
+        padding: 0;
+        padding-top: 30px;
+    }
+}
+body .footer {
+    background-color: #FFFAFA;
 }

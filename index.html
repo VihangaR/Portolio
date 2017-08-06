@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/bulma.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <!-- JS Files
@@ -38,7 +39,7 @@
 
 </head>
 <body>
-  <div class="darken">
+  <div>
     <section class="hero is-fullheight mainbg">
       <div class="hero-head">
         <div class="container">
@@ -79,7 +80,7 @@
       </div>
     </section>
   </div>
-  <section class="hero is-small">
+  <section class="hero is-small about">
     <div class="hero-body">
       <div class="container">
         <div class="has-text-centered">
@@ -87,7 +88,7 @@
             About Me
           </h1>
           <div class="body-text">
-            My name is Vihanga Ratnasinghe and I love technology. I've been tinkering with computers for as long as I can remember. From building my first computer, to my first program, and
+            My name is <strong>Vihanga Ratnasinghe</strong> and I love technology. I've been tinkering with computers for as long as I can remember. From building my first computer, to my first program, and
             attending university for a degree, it has all revolved around technology. I currently attend University of Toronto and am studying in the Machine Learning and Data Mining stream.
           </div>
           <div class="body-text">
@@ -99,7 +100,7 @@
       </div>
     </div>
   </section>
-  <section class="hero is-small about">
+  <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
         <div class="has-text-centered">
@@ -169,26 +170,90 @@
       </div>
     </div>
   </section>
-  <section class="hero is-small">
+  <section class="hero is-small projects">
     <div class="hero-body">
       <div class="container">
         <div class="has-text-centered">
           <h1 class="head-text">
             Projects
           </h1>
-          <div class="body-text">
-            My name is Vihanga Ratnasinghe and I love technology. I've been tinkering with computers for as long as I can remember. From building my first computer, to my first program, and
-            attending university for a degree, it has all revolved around technology. I currently attend University of Toronto and am studying in the Machine Learning and Data Mining stream.
+          <div class="columns projMargin">
+            <div class="column box-withBorder">
+              <div class="project-title">Click through the projects on the right</div>
+              <div id="project-description" class="body-text">These are projects that I have worked on over the years. Some are small, while others are much larger. Click through them to see each one!</div>
+            </div>
+            <div class="column box-noBorder v-align">
+              <div class="columns">
+                <div class="column"><div><img class="projImg" id="proj1" src="img/projKip.jpg" alt=""></div></div>
+                <div class="column"><div><img class="projImg" id="proj2" src="img/projPort.jpg" alt=""></div></div>
+                <div class="column"><div><img class="projImg" id="proj3" src="img/projBlog.png" alt=""></div></div>
+              </div>
+              <div class="columns">
+                <div class="column"><div><img class="projImg" id="proj4" src="img/projChat.png" alt=""></div></div>
+                <div class="column"><div><img class="projImg" id="proj5" src="img/projSocial.png" alt=""></div></div>
+                <div class="column"><div><img class="projImg" id="proj6" src="img/soon.jpg" alt=""></div></div>
+              </div>
+            </div>
           </div>
-          <div class="body-text">
-            I love playing around with new technology, from front-end frameworks such as Bulma, Bootstrap or even Google's very own Materialize design, to back-end technologies such as Node
-            and different databases. I also enjoy the design aspect of it all. I like to create things that are very minimal, but very impactful. Due to that, I believe the quote "More is less"
-            is something that a lot of people should follow.
           </div>
         </div>
       </div>
     </div>
   </section>
+  <section class="hero is-small contact">
+    <div class="hero-body">
+      <div class="container">
+        <div class="has-text-centered">
+          <h1 class="head-text">
+            Contact me
+          </h1>
+          <div class="body-text">
+            You can contact me down below by sending me an email. I will respond as soon as possible!
+          </div>
+          <div class="body-text">
+            <div class="columns">
+              <div class="column is-half is-offset-one-quarter">
+                <form method="POST" action="http://formspree.io/vihanga.ratnasinghe@gmail.com">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input" type="email" name="email" placeholder="Your email">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <textarea class="textarea" name="message" placeholder="Your message"></textarea>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="control">
+                      <button class="button is-primary"type="submit">Send</button>
+                    </div>
+                  </div>                  
+                </form>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          This website was created by <strong>Vihanga Ratnasinghe</strong>. The source code can be found on GitHub.
+        </p>
+        <p>
+          <a class="icon" href="https://github.com/VihangaR?tab=repositories">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="icon" href="https://www.linkedin.com/in/vihanga-ratnasinghe-998b4b114/">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
