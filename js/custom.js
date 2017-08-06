@@ -9,6 +9,8 @@ jQuery(document).ready(function($){
     var $menu = $('.navbar-menu');
     var $title = $('.project-title');
     var $desc = $('#project-description');
+    var $pPage = $('#pPage');
+    var $sCode = $('#sCode');
 
     $toggle.click(function() {
         $toggle.toggleClass('is-active');
@@ -17,31 +19,85 @@ jQuery(document).ready(function($){
 
     $('.projImg').click(function(){
         $('.darken').removeClass('darken');
+        if($(".invis")[0]){
+            $pPage.removeClass('invis');
+            $sCode.removeClass('invis');
+            console.log("hi")
+        }        
         $(this).addClass('darken');
     });
 
     $('#proj1').click(function(){
         $title.text("KiPow website");
-        $desc.text(kpText)
+        $desc.text(kpText);
+        $pPage.attr('href', 'http://kipowcanada.com/');
+        $sCode.attr('href', 'https://github.com/VihangaR/VihangaR.github.io');
     });
     $('#proj2').click(function(){
         $title.text("My portoflio website");
         $desc.text(poText)
+        $pPage.addClass('invis');
+        $sCode.attr('href', 'https://github.com/VihangaR/Portolio');
     });
     $('#proj3').click(function(){
         $title.text("Blog platform");
         $desc.text(blText)
+        $pPage.attr('href', 'http://www.dreamprojects.club/blogs');
+        $sCode.attr('href', 'https://github.com/VihangaR/BlogPlatform');
     });
     $('#proj4').click(function(){
         $title.text("Chat app");
         $desc.text(chText)
+        $pPage.addClass('invis');
+        $sCode.attr('href', 'https://github.com/VihangaR/Chat_Application');
     });
     $('#proj5').click(function(){
         $title.text("Social media platform");
         $desc.text(smText)
+        $pPage.attr('href', 'http://whispering-cove-71463.herokuapp.com/');
+        $sCode.attr('href', 'https://github.com/VihangaR/Social_Media');
     });
     $('#proj6').click(function(){
-        $title.text("More to come!");
+        $title.text("More to come");
         $desc.text(emText)
+        $pPage.addClass('invis');
+        $sCode.addClass('invis');
     });
+
+    // Smooth Scrolling
+    $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+            ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                scrollTop: target.offset().top
+                }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                };
+                });
+            }
+            }
+        });
 });

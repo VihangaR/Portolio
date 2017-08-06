@@ -1,6 +1,6 @@
 * {
     font-family: 'Raleway', sans-serif;
-    
+    outline: none;
 }
 
 .type {
@@ -13,19 +13,36 @@
     border-color: transparent;
   }
 }
+.navI {
+    color: #5365aa
+}
 .navI:hover {
-    color: #5365aa;
+    color: #384371;
 }
 
 .nav-text {
     font-size: 1.3em;
     font-weight: 500;
 }
-
+#pPage .button {
+    border-color: #dbdbdb;
+}
+#sCode .button {
+    border-color: #dbdbdb;
+}
+#sCode .button:hover {
+    border-color: #708090;
+}
+#pPage .button:hover {
+    border-color: #708090;
+}
 .intro-text {
     font-size: 3em;
     font-weight: 500;
     color: #5365aa;
+}
+.invis {
+    display: none;
 }
 .mainbg {
     background-image: url("../img/bg5.jpg");
@@ -40,6 +57,7 @@
 }
 .project-title {
     font-size: 2em;
+    font-weight: 500;
 }
 .body-text {
     margin-top: 1.5%;
@@ -98,6 +116,9 @@ i:hover {
 }
 .button.is-primary {
     background-color: #5365aa;
+}
+.button.is-primary:hover {
+    background-color: #384371;
 }
 a {
     color: #5365aa;
